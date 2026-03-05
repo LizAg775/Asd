@@ -15,5 +15,10 @@ public class Movement : MonoBehaviour
         {
             transform.Translate(-0.0005f, 0, 0);
         }
+
+        if (Input.GetKey("a"))
+        {
+            transform.Translate(0.0005f, 0, 0);
+        }
     }
 }
