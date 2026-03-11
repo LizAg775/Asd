@@ -13,12 +13,23 @@ public class Movement : MonoBehaviour
     {
         if (Input.GetKey("d"))
         {
-            transform.Translate(-0.0005f, 0, 0);
+            transform.Translate(-0.05f, 0, 0);
         }
 
         if (Input.GetKey("a"))
         {
-            transform.Translate(0.0005f, 0, 0);
+            transform.Translate(0.05f, 0, 0);
         }
+
+        if (Input.GetKey("w"))
+        {
+            transform.Translate(0,0, 0.10f);
+        }else{
+
+        }
+
+         if(!Physics.CheckSphere(transform.position,1f)){
+           transform.Translate(0, 0, -0.10f); 
+         }
     }
 }
