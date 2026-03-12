@@ -24,7 +24,9 @@ public class Movement : MonoBehaviour
             this.transform.Translate(0.05f, 0, 0);
         }
 
-        if (Input.GetKey("w") && Physics.CheckSphere(transform.position, 2f) && pulando == false){
+        
+
+        if (Input.GetKey("w") && Physics.CheckSphere(transform.position, 0, 0, 0.5f) && pulando == false){
             pulando = true;
             inicioPulo = frameAtual;
         }
@@ -37,6 +39,12 @@ public class Movement : MonoBehaviour
             }else{
                 pulando = false;
             }
+        }
+
+        frameAtual = frameAtual + 1;
+
+        if(pulando == false &&Physics.CheckSphere(transform.position, 1)==false){
+            this.transform.Translate(0, 0, -0.05f);
         }
 
     }
