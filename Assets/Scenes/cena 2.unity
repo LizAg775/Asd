@@ -976,6 +976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68a4b6c682f3efb4790b50e2692357f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Movement
+  posicaoInicial: {x: 0, y: 0, z: 0}
 --- !u!65 &1016432803
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1998,15 +1999,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4005596575928269273, guid: f10a82f78e6477046a7c9fd9221cf631, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.6
+      value: -18.7
       objectReference: {fileID: 0}
     - target: {fileID: 4005596575928269273, guid: f10a82f78e6477046a7c9fd9221cf631, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10.44
+      value: -10.4
       objectReference: {fileID: 0}
     - target: {fileID: 4005596575928269273, guid: f10a82f78e6477046a7c9fd9221cf631, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.88
+      value: 0.47
       objectReference: {fileID: 0}
     - target: {fileID: 4490569661390206451, guid: f10a82f78e6477046a7c9fd9221cf631, type: 3}
       propertyPath: m_LocalScale.y
@@ -2026,7 +2027,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8883088593621645860, guid: f10a82f78e6477046a7c9fd9221cf631, type: 3}
       propertyPath: orthographic size
-      value: 4.5
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

@@ -5,12 +5,13 @@ public class Movement : MonoBehaviour
     int frameAtual = 0;
     int inicioPulo = 0;
     bool pulando = false;
+    public Vector3 posicaoInicial;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        public posicaoInicial = Vector3
+       // public posicaoInicial = Vector3
     }
 
     // Update is called once per frame
@@ -18,7 +19,7 @@ public class Movement : MonoBehaviour
     {
 
         if(Input.GetKey("r")){
-            this.transform.position = posicaoInicial
+            this.transform.position = posicaoInicial;
         }
         if (Input.GetKey("d") && Physics.CheckSphere(transform.position + Vector3.right * 0.2f, 0.85f)== false) {
             this.transform.Translate(-0.05f, 0, 0);
